@@ -31,8 +31,7 @@ export default {};
 .banner__project {
   position: absolute;
   bottom: 0;
-  right: 50%;
-  left: 20%;
+  left: 35vw;
   width: 100px;
   height: 17px;
   display: flex;
@@ -46,14 +45,13 @@ export default {};
 
 @media(max-width: 600px){
   .banner__project {
-  flex-direction: row;
-  gap: 20%;
-  right: 40%;
-  left: 20%;
-  width: 40px;
-  height: 10px;
-  padding: 20px 80px;
-  border-radius: 22px 22px 0px 0px;
+    flex-direction: row;
+    gap: 20%;
+    left: 20vw;
+    width: 30px;
+    height: 10px;
+    padding: 20px 80px;
+    border-radius: 22px 22px 0px 0px;
 }
 .banner__project__text-h1{
 
@@ -66,8 +64,14 @@ export default {};
   height: 20vh;
   margin-top: 7px;
 }
-
-
 }
-
+@media(max-width: 280px){
+  .banner__project {
+    max-width: 1px;
+    max-height: 1px;
+    padding: 20px 65px;
+    border-radius: 14px 14px 0px 0px;
+    gap: 5px
+}
+}
 </style>

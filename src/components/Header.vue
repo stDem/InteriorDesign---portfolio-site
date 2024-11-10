@@ -122,7 +122,7 @@ $colorTextGray: #4d5053;
   }
 
 @media(max-width: 600px){
-  .header__logo-right[data-v-61dd7a3d] {
+  .header__logo-right {
     gap: 7%;
     font-size: 15px;
   }
@@ -134,5 +134,15 @@ $colorTextGray: #4d5053;
 .container {
   --padding: 5px;
   }
+}
+
+@media(max-width: 350px){
+  .header{
+    margin-top: 5px;
+  }
+  .header__logo-left__text{
+    display: none;
+  }
+  
 }
 </style>
