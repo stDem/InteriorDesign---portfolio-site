@@ -74,10 +74,7 @@ $colorTextGray: #4d5053;
   display: flex;
   align-items: center;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 .container {
   --width: 1180px;
   --padding: 30px;
@@ -135,7 +132,7 @@ $colorTextGray: #4d5053;
   }
 }
 .container {
-  --padding: 0px;
+  --padding: 5px;
   }
 }
 </style>

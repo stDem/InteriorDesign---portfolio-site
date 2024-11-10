@@ -7,9 +7,9 @@
           v-for="article in filteredArticles"
           :key="article.id"
         >
-          <h1>{{ article.title }}</h1>
+          <h1 class="blog__content-text-h1">{{ article.title }}</h1>
           <img :src="require(`@/assets/img/${article.img}`)" :alt="article.tag" class="blog__img"/>
-          <p>{{ article.text }}</p>
+          <p class="blog__content-text">{{ article.text }}</p>
         </div>
       </div>
 
@@ -137,6 +137,14 @@ $mainTextColor: #292f36;
 $colorTextGray: #4d5053;
 $widthContainer: 1000px;
 
+.container {
+  --width: 1180px;
+  --padding: 30px;
+  max-width: calc(var(--width) + var(--padding) * 2);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+
 .blog-btn {
   color: $mainTextColor;
   text-align: center;
@@ -194,6 +202,12 @@ $widthContainer: 1000px;
   display: flex;
   flex-direction: column-reverse;
   gap: 10px;
+  }
+  .container {
+  --padding: 10px;
+  }
+  .blog__content-text-h1{
+    font-size: 15px;
   }
 }
 

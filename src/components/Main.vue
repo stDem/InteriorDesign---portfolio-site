@@ -50,10 +50,10 @@ export default {};
   gap: 20%;
   right: 40%;
   left: 20%;
-  width: 50px;
+  width: 40px;
   height: 10px;
   padding: 20px 80px;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 22px 22px 0px 0px;
 }
 .banner__project__text-h1{
 

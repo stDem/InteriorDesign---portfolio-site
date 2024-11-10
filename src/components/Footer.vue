@@ -176,7 +176,7 @@ $colorTextGray: #4d5053;
 
 @media(max-width: 600px){
   .container {
-    --padding: 5px;
+    --padding: 10px;
     }
   .interno-logo__text-h1{
     font-size: 25px;

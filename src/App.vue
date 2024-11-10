@@ -32,4 +32,14 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+html {
+  scroll-behavior: smooth;
+  position: relative;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+</style>
