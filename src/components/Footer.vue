@@ -15,7 +15,7 @@
                   fill="#CDA274"
                 />
               </svg>
-              <h1>Interno</h1>
+              <h1 class="interno-logo__text-h1">Interno</h1>
             </div>
             <p class="p-footer">
               It is a long established fact that a reader will be distracted
@@ -172,5 +172,19 @@ $colorTextGray: #4d5053;
     }
   }
 }
+}
+
+@media(max-width: 600px){
+  .container {
+    --padding: 5px;
+    }
+  .interno-logo__text-h1{
+    font-size: 25px;
+  }
+  .footer {
+  gap: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  }
 }
 </style>

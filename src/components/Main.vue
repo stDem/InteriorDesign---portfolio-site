@@ -1,8 +1,8 @@
 <template>
   <section class="banner">
     <div class="banner__project">
-      <h1>Our Project</h1>
-      <p>Home / Project</p>
+      <h1 class="banner__project__text-h1">Our Project</h1>
+      <p class="banner__project__text-p">Home/ Project</p>
     </div>
   </section>
   <section class="tags">
@@ -28,20 +28,46 @@ export default {};
   position: relative;
 }
 
+.banner__project {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  left: 20%;
+  width: 100px;
+  height: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 41px 125px 41px 125px;
+  border-radius: 37px 37px 0px 0px;
+  background: rgb(255, 255, 255);
+}
+
+@media(max-width: 600px){
   .banner__project {
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    left: 20%;
-    width: 100px;
-    height: 17px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 41px 125px 41px 125px;
-    border-radius: 37px 37px 0px 0px;
-    background: rgb(255, 255, 255);
-  }
+  flex-direction: row;
+  gap: 20%;
+  right: 40%;
+  left: 20%;
+  width: 50px;
+  height: 10px;
+  padding: 20px 80px;
+  border-radius: 25px 25px 0px 0px;
+}
+.banner__project__text-h1{
+
+  font-size: 15px;
+}
+.banner__project__text-p{
+  font-size: 10px;
+}
+.banner {
+  height: 20vh;
+  margin-top: 7px;
+}
+
+
+}
 
 </style>

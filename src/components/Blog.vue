@@ -145,7 +145,6 @@ $widthContainer: 1000px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  display: flex;
   padding: 9px 30px;
   display: flex;
   justify-content: center;
@@ -163,7 +162,7 @@ $widthContainer: 1000px;
 .blog {
   display: grid;
   grid-template-columns: 70% auto;
-  gap: 50px;
+  gap: 20px;
   &__content {
     display: flex;
     flex-wrap: wrap;
@@ -190,4 +189,12 @@ $widthContainer: 1000px;
     }
   }
 }
+@media(max-width: 600px){
+  .blog {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  }
+}
+
 </style>

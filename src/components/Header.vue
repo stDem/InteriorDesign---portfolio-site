@@ -103,6 +103,7 @@ $colorTextGray: #4d5053;
   display: flex;
   justify-content: space-around;
   &__logo-left {
+  
     a {
       display: flex;
       align-items: center;
@@ -113,14 +114,28 @@ $colorTextGray: #4d5053;
   }
   
 }
-.header__logo-right[data-v-61dd7a3d] {
+.header__logo-right{
     @extend %flex-center;
     gap: 20%;
-    a{
-      list-style-type: none;
+    a {
       text-decoration: none;
       color: $mainTextColor;
     }
     
   }
+
+@media(max-width: 600px){
+  .header__logo-right[data-v-61dd7a3d] {
+    gap: 7%;
+    font-size: 15px;
+  }
+  .interno-logo {
+  h1 {
+    font-size: 25px;
+  }
+}
+.container {
+  --padding: 0px;
+  }
+}
 </style>
